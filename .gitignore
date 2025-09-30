@@ -1,0 +1,15 @@
+# Kubebuilder binaries (too large for git)
+kubebuilder/bin/kube-apiserver
+kubebuilder/bin/kube-controller-manager
+kubebuilder/bin/kube-scheduler
+kubebuilder/bin/kubelet
+kubebuilder/bin/kubectl
+kubebuilder/bin/etcd
+
+# Runtime data
+etcd/
+
+# Logs and temp files
+*.log
+*.tmp
+/tmp/
