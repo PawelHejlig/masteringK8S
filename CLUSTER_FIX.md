@@ -71,3 +71,6 @@ codespaces-d37aef   Ready    master   8h    v1.30.0
 
 ## Root Cause
 The kubeconfig was generated with a template placeholder `<HOST_IP>` that wasn't replaced with the actual IP address, and the user credentials section was empty. This is common in kubebuilder test environments where configuration needs to be customized per deployment.
+
+Also, fixed tainted Node by:
+kubectl taint nodes codespaces-d37aef node.cloudprovider.kubernetes.io/uninitialized:NoSchedule-
